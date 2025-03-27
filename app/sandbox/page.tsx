@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/Button";
-import { ArrowRightIcon, PlusIcon, CheckIcon } from "../components/Icons";
 
 export default function SandboxPage() {
   return (
@@ -12,7 +11,7 @@ export default function SandboxPage() {
         </p>
         
         {/* Button Component Examples */}
-        <div className="border border-black/10 dark:border-white/10 rounded-xl p-8 w-full h-auto shadow-sm">
+        <div className="border border-yellow-500 dark:border-yellow-200 rounded-xl p-8 w-full h-auto shadow-sm">
           <h2 className="text-xl font-medium mb-6">Button Component</h2>
           
           {/* Button Variants */}
@@ -37,20 +36,6 @@ export default function SandboxPage() {
             </div>
           </div>
           
-          {/* Buttons with Icons */}
-          <div className="mb-8">
-            <h3 className="text-lg font-medium mb-4">Icons</h3>
-            <div className="flex flex-wrap gap-4">
-              <Button icon={<PlusIcon />}>With Icon</Button>
-              <Button icon={<ArrowRightIcon />} iconPosition="right">
-                Icon Right
-              </Button>
-              <Button variant="outline" icon={<CheckIcon />}>
-                Outline with Icon
-              </Button>
-            </div>
-          </div>
-          
           {/* Button States */}
           <div className="mb-8">
             <h3 className="text-lg font-medium mb-4">States</h3>
@@ -67,16 +52,13 @@ export default function SandboxPage() {
             <div className="flex flex-wrap gap-4">
               <Button 
                 variant="primary" 
-                size="lg" 
-                icon={<ArrowRightIcon />} 
-                iconPosition="right"
+                size="lg"
               >
                 Get Started
               </Button>
               <Button 
                 variant="outline" 
-                size="sm" 
-                icon={<PlusIcon />}
+                size="sm"
               >
                 Add Item
               </Button>
